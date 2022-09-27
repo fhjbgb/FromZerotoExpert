@@ -48,7 +48,7 @@ public class loginTest {
 
 
     @ResponseBody
-    @RequestMapping("/FromZerotoExpert")
+    @RequestMapping("/FromZerotoExpert/test")
     public String login(HttpServletResponse response, @CookieValue(value = "cookie",defaultValue = "0") String s){
         if(s.equals("0")){
             Cookie cookie = new Cookie("cookie", "1");
